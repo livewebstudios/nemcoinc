@@ -18,6 +18,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -40,6 +42,15 @@
       }
     }
   }
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TZJ26NKXWD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-TZJ26NKXWD');
   </script>
 </head>
 <body>
@@ -157,6 +168,8 @@
             <label for="message">Message <span class="req">*</span></label>
             <textarea id="message" name="message" required></textarea>
           </div>
+
+          <div class="g-recaptcha" data-sitekey="6Lf8QZ4aAAAANOSGu1pTvRGSiR-ypNT8ahi2lT7"></div>
 
           <div class="actions">
             <button type="submit" class="btn btn-primary">Submit</button>
